@@ -32,7 +32,7 @@ const StickyCTA: React.FC = () => {
         {/* Subtext below button */}
         <div className="text-center mt-2">
            <p className="text-xs font-medium text-slate-700 bg-white/90 backdrop-blur-sm inline-block px-3 py-1 rounded-full shadow-sm">
-             先着100名限定 / 3分で完了
+             先着10社限定 / 3分で完了
            </p>
         </div>
       </div>
