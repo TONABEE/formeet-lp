@@ -8,8 +8,8 @@ const StickyCTA: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 pb-6 safe-area-bottom flex justify-center pointer-events-none">
-      <div className="w-full max-w-md pointer-events-auto">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-6 pb-8 safe-area-bottom flex justify-center pointer-events-none">
+      <div className="w-full max-w-2xl pointer-events-auto">
         {/* Main CTA Button */}
         {/* 
             Design Spec: 濃い黄（#f9c12e）
@@ -17,21 +17,21 @@ const StickyCTA: React.FC = () => {
         */}
         <button
           onClick={handleClick}
-          className="group relative w-full bg-[#f9c12e] hover:bg-[#e0ac29] text-black font-bold text-lg md:text-xl py-4 rounded-full shadow-xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 border-b-4 border-[#d4a017]"
+          className="group relative w-full bg-[#f9c12e] hover:bg-[#e0ac29] text-black font-bold text-2xl md:text-3xl py-6 md:py-8 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-3 border-b-8 border-[#d4a017]"
         >
           {/* Shine effect overlay */}
           <div className="absolute inset-0 rounded-full overflow-hidden">
             <div className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12 animate-[shimmer_3s_infinite]" />
           </div>
 
-          <Sparkles className="w-5 h-5 text-slate-800" />
+          <Sparkles className="w-7 h-7 md:w-8 md:h-8 text-slate-800" />
           <span>モニターに応募する (無料)</span>
-          <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+          <ArrowRight className="w-7 h-7 md:w-8 md:h-8 transition-transform group-hover:translate-x-1" />
         </button>
         
         {/* Subtext below button */}
-        <div className="text-center mt-2">
-           <p className="text-xs font-medium text-slate-700 bg-white/90 backdrop-blur-sm inline-block px-3 py-1 rounded-full shadow-sm">
+        <div className="text-center mt-3">
+           <p className="text-sm md:text-base font-medium text-slate-700 bg-white/90 backdrop-blur-sm inline-block px-4 py-2 rounded-full shadow-sm">
              先着10社限定 / 3分で完了
            </p>
         </div>
